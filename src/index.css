@@ -1,0 +1,73 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../public/font/Roboto-Regular.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../public/imgs/cloud.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+input {
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+button {
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#root-container {
+  width: 40%;
+  display: grid;
+  gap: 18px;
+}
+#logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#weather-container {
+  border-radius: 30px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 0.5fr 2.5fr 2fr;
+  gap: 18px;
+  background-color: #fff;
+}
+#weather-temp {
+  font-size: 30px;
+  text-align: center;
+}
+#weather-otherinfo ul li {
+  padding: 5px;
+}
+#weather-otherinfo ul li img {
+  margin-right: 10px;
+}

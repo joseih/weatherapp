@@ -3,6 +3,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: "development",
   entry: "./src/index.js",
 
   output: {
@@ -15,9 +16,17 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(jpg|png|svg|gif)$/,
+        type: "asset/resource",
+      },
+      
     ],
   },
 
